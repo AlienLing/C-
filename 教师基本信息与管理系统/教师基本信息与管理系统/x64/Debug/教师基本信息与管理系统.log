@@ -1,0 +1,9 @@
+﻿  MainTest.cpp
+C:\Users\86150\source\repos\教师基本信息与管理系统\教师基本信息与管理系统\managerteacher.h(63,6): warning C4101: “k”: 未引用的局部变量
+  (编译源文件“MainTest.cpp”)
+  
+C:\Users\86150\source\repos\教师基本信息与管理系统\教师基本信息与管理系统\managerteacher.h(62,6): warning C4101: “teacherNum”: 未引用的局部变量
+  (编译源文件“MainTest.cpp”)
+  
+C:\Users\86150\source\repos\教师基本信息与管理系统\教师基本信息与管理系统\MainTest.cpp(13,12): warning C4101: “stuId”: 未引用的局部变量
+  教师基本信息与管理系统.vcxproj -> C:\Users\86150\source\repos\教师基本信息与管理系统\x64\Debug\教师基本信息与管理系统.exe
