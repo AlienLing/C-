@@ -1,0 +1,37 @@
+﻿  YinghuaTree.cpp
+C:\Users\86150\source\repos\Project1\Project1\YinghuaTree.cpp(12,19): warning C4305: “初始化”: 从“double”到“float”截断
+C:\Users\86150\source\repos\Project1\Project1\YinghuaTree.cpp(13,19): warning C4305: “初始化”: 从“double”到“float”截断
+C:\Users\86150\source\repos\Project1\Project1\YinghuaTree.cpp(39,10): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+C:\Users\86150\source\repos\Project1\Project1\YinghuaTree.cpp(82,18): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+C:\Users\86150\source\repos\Project1\Project1\YinghuaTree.cpp(83,18): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+C:\Users\86150\source\repos\Project1\Project1\YinghuaTree.cpp(85,25): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+C:\Users\86150\source\repos\Project1\Project1\YinghuaTree.cpp(86,42): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+C:\Users\86150\source\repos\Project1\Project1\YinghuaTree.cpp(89,32): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+C:\Users\86150\source\repos\Project1\Project1\YinghuaTree.cpp(89,25): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+C:\Users\86150\source\repos\Project1\Project1\YinghuaTree.cpp(89,16): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+C:\Users\86150\source\repos\Project1\Project1\YinghuaTree.cpp(89,7): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+C:\Users\86150\source\repos\Project1\Project1\YinghuaTree.cpp(93,57): warning C4305: “参数”: 从“double”到“float”截断
+C:\Users\86150\source\repos\Project1\Project1\YinghuaTree.cpp(93,52): warning C4305: “参数”: 从“double”到“float”截断
+C:\Users\86150\source\repos\Project1\Project1\YinghuaTree.cpp(94,58): warning C4305: “参数”: 从“double”到“float”截断
+C:\Users\86150\source\repos\Project1\Project1\YinghuaTree.cpp(94,53): warning C4305: “参数”: 从“double”到“float”截断
+C:\Users\86150\source\repos\Project1\Project1\YinghuaTree.cpp(95,59): warning C4305: “参数”: 从“double”到“float”截断
+C:\Users\86150\source\repos\Project1\Project1\YinghuaTree.cpp(95,54): warning C4305: “参数”: 从“double”到“float”截断
+C:\Users\86150\source\repos\Project1\Project1\YinghuaTree.cpp(99,24): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+C:\Users\86150\source\repos\Project1\Project1\YinghuaTree.cpp(121,69): warning C4305: “参数”: 从“double”到“float”截断
+C:\Users\86150\source\repos\Project1\Project1\YinghuaTree.cpp(121,64): warning C4305: “参数”: 从“double”到“float”截断
+C:\Users\86150\source\repos\Project1\Project1\YinghuaTree.cpp(126,22): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+C:\Users\86150\source\repos\Project1\Project1\YinghuaTree.cpp(126,15): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+C:\Users\86150\source\repos\Project1\Project1\YinghuaTree.cpp(130,41): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+C:\Users\86150\source\repos\Project1\Project1\YinghuaTree.cpp(130,22): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+C:\Users\86150\source\repos\Project1\Project1\YinghuaTree.cpp(130,15): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+C:\Users\86150\source\repos\Project1\Project1\YinghuaTree.cpp(137,9): warning C4244: “参数”: 从“double”转换到“DWORD”，可能丢失数据
+C:\Users\86150\source\repos\Project1\Project1\YinghuaTree.cpp(143,12): warning C4244: “参数”: 从“time_t”转换到“unsigned int”，可能丢失数据
+C:\Users\86150\source\repos\Project1\Project1\YinghuaTree.cpp(148,61): warning C4305: “参数”: 从“double”到“float”截断
+C:\Users\86150\source\repos\Project1\Project1\YinghuaTree.cpp(148,42): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+C:\Users\86150\source\repos\Project1\Project1\YinghuaTree.cpp(168,54): warning C4305: “参数”: 从“double”到“float”截断
+C:\Users\86150\source\repos\Project1\Project1\YinghuaTree.cpp(168,45): warning C4305: “参数”: 从“double”到“float”截断
+C:\Users\86150\source\repos\Project1\Project1\YinghuaTree.cpp(169,48): warning C4305: “参数”: 从“double”到“float”截断
+C:\Users\86150\source\repos\Project1\Project1\YinghuaTree.cpp(169,43): warning C4305: “参数”: 从“double”到“float”截断
+C:\Users\86150\source\repos\Project1\Project1\YinghuaTree.cpp(174,63): warning C4305: “参数”: 从“double”到“float”截断
+C:\Users\86150\source\repos\Project1\Project1\YinghuaTree.cpp(174,44): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+  Project1.vcxproj -> C:\Users\86150\source\repos\Project1\x64\Debug\Project1.exe
