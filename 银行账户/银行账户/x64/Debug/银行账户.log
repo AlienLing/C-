@@ -1,0 +1,28 @@
+﻿  MainTest.cpp
+  ManagerCheckingAccount.h
+  正在生成代码...
+C:\Users\86150\source\repos\银行账户\银行账户\CheckingAccount.h(30): warning C4715: “CheckingAccount::debit”: 不是所有的控件路径都返回值
+C:\Users\86150\source\repos\银行账户\银行账户\CheckingAccount.h(30): warning C4715: “CheckingAccount::debit”: 不是所有的控件路径都返回值
+LINK : warning LNK4075: 忽略“/INCREMENTAL”(由于“/FORCE”规范)
+ManagerCheckingAccount.obj : warning LNK4006: "public: __cdecl Account::Account(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,double)" (??0Account@@QEAA@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@N@Z) 已在 MainTest.obj 中定义；已忽略第二个定义
+ManagerCheckingAccount.obj : warning LNK4006: "public: __cdecl CheckingAccount::CheckingAccount(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,double)" (??0CheckingAccount@@QEAA@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@N@Z) 已在 MainTest.obj 中定义；已忽略第二个定义
+ManagerCheckingAccount.obj : warning LNK4006: "public: __cdecl Date::Date(void)" (??0Date@@QEAA@XZ) 已在 MainTest.obj 中定义；已忽略第二个定义
+ManagerCheckingAccount.obj : warning LNK4006: "public: __cdecl ManagerCheckingAccount::ManagerCheckingAccount(void)" (??0ManagerCheckingAccount@@QEAA@XZ) 已在 MainTest.obj 中定义；已忽略第二个定义
+ManagerCheckingAccount.obj : warning LNK4006: "public: void __cdecl ManagerCheckingAccount::addCheckingAccount(void)" (?addCheckingAccount@ManagerCheckingAccount@@QEAAXXZ) 已在 MainTest.obj 中定义；已忽略第二个定义
+ManagerCheckingAccount.obj : warning LNK4006: "public: void __cdecl Account::credit(double)" (?credit@Account@@QEAAXN@Z) 已在 MainTest.obj 中定义；已忽略第二个定义
+ManagerCheckingAccount.obj : warning LNK4006: "public: void __cdecl CheckingAccount::credit(double)" (?credit@CheckingAccount@@QEAAXN@Z) 已在 MainTest.obj 中定义；已忽略第二个定义
+ManagerCheckingAccount.obj : warning LNK4006: "public: void __cdecl ManagerCheckingAccount::creditByID(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,double)" (?creditByID@ManagerCheckingAccount@@QEAAXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@N@Z) 已在 MainTest.obj 中定义；已忽略第二个定义
+ManagerCheckingAccount.obj : warning LNK4006: "public: bool __cdecl Account::debit(double)" (?debit@Account@@QEAA_NN@Z) 已在 MainTest.obj 中定义；已忽略第二个定义
+ManagerCheckingAccount.obj : warning LNK4006: "public: bool __cdecl CheckingAccount::debit(double)" (?debit@CheckingAccount@@QEAA_NN@Z) 已在 MainTest.obj 中定义；已忽略第二个定义
+ManagerCheckingAccount.obj : warning LNK4006: "public: void __cdecl ManagerCheckingAccount::debitByID(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,double)" (?debitByID@ManagerCheckingAccount@@QEAAXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@N@Z) 已在 MainTest.obj 中定义；已忽略第二个定义
+ManagerCheckingAccount.obj : warning LNK4006: "public: void __cdecl ManagerCheckingAccount::deleteByID(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)" (?deleteByID@ManagerCheckingAccount@@QEAAXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z) 已在 MainTest.obj 中定义；已忽略第二个定义
+ManagerCheckingAccount.obj : warning LNK4006: "public: double __cdecl Account::getBalance(void)const " (?getBalance@Account@@QEBANXZ) 已在 MainTest.obj 中定义；已忽略第二个定义
+ManagerCheckingAccount.obj : warning LNK4006: "public: class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > __cdecl Account::getID(void)" (?getID@Account@@QEAA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ) 已在 MainTest.obj 中定义；已忽略第二个定义
+ManagerCheckingAccount.obj : warning LNK4006: "public: static double __cdecl CheckingAccount::getfee(void)" (?getfee@CheckingAccount@@SANXZ) 已在 MainTest.obj 中定义；已忽略第二个定义
+ManagerCheckingAccount.obj : warning LNK4006: "public: void __cdecl Account::outopenDay(void)const " (?outopenDay@Account@@QEBAXXZ) 已在 MainTest.obj 中定义；已忽略第二个定义
+ManagerCheckingAccount.obj : warning LNK4006: "public: void __cdecl ManagerCheckingAccount::printByID(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)" (?printByID@ManagerCheckingAccount@@QEAAXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z) 已在 MainTest.obj 中定义；已忽略第二个定义
+ManagerCheckingAccount.obj : warning LNK4006: "public: void __cdecl ManagerCheckingAccount::printCheckingAccount(void)" (?printCheckingAccount@ManagerCheckingAccount@@QEAAXXZ) 已在 MainTest.obj 中定义；已忽略第二个定义
+ManagerCheckingAccount.obj : warning LNK4006: "public: void __cdecl Date::printDate(void)const " (?printDate@Date@@QEBAXXZ) 已在 MainTest.obj 中定义；已忽略第二个定义
+ManagerCheckingAccount.obj : warning LNK4006: "private: static double CheckingAccount::fee" (?fee@CheckingAccount@@0NA) 已在 MainTest.obj 中定义；已忽略第二个定义
+C:\Users\86150\source\repos\银行账户\x64\Debug\银行账户.exe : warning LNK4088: 因 /FORCE 选项生成了映像；映像可能不能运行
+  银行账户.vcxproj -> C:\Users\86150\source\repos\银行账户\x64\Debug\银行账户.exe
