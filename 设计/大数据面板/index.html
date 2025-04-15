@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>数据可视化</title>
+
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery.js"></script>
+    <script>
+        $(function () {
+            $('.myscroll').myScroll({
+                speed: 60, //数值越大，速度越慢
+                rowHeight: 38 //li的高度
+            });
+        });
+
+        $(document).ready(function () {
+            var whei = $(window).width()
+            $("html").css({ fontSize: whei / 22 });
+            $(window).resize(function () {
+                var whei = $(window).width();
+                $("html").css({ fontSize: whei / 22 })
+            });
+        });
+    </script>
+</head>
+<body>
+
+<div class="main">
+    <div class="header">
+        <div class="header-left fl" id="time"></div>
+        <div class="header-center fl">
+            <div class="header-title">
+                EHS数据可视化大屏中心
+            </div>
+            <div class="header-img"></div>
+        </div>
+        <div class="header-right fl"></div>
+        <div class="header-bottom fl"></div>
+
+    </div>
+
+    <div class="center">
+        <div class="center-left fl">
+            <div class="left-top">
+                <!--<h1 id="ceshi">数据可视化</h1>-->
+                <div class="title">基本信息</div>
+                <div class="top-list">
+                    <p>ehs系统中某某公司的安全信息概览</p>
+
+<div class="top-gauges" style="display: flex; justify-content: space-around; align-items: center; margin-top: 10px;">
+    <div id="basicGauge1" style="width: 30%; height: 150px;"></div>
+    <div id="basicGauge2" style="width: 30%; height: 150px;"></div>
+    <div id="basicGauge3" style="width: 30%; height: 150px;"></div>
+</div>
+                    </ul>
+                </div>
+
+            </div>
+            
+<div class="left-cen">
+    <div class="title" style="text-align: center;">安全隐患类型趋势分析</div>
+    <div id="hazardLineChart" style="width:100%; height:200px; margin-bottom: 20px;"></div>
+    
+</div>
+
+<div class="left-bottom">
+                <div class="title" style="text-align: center;">安全隐患类型</div>
+                <div class="bottom-b">
+        <div id="chart3" class="allnav" style="margin-top: 10px;"></div>
+                </div>
+
+            </div>
+        </div>
+        <div class="center-cen fl">
+            <div class="cen-top">
+                <div class="top-title">
+                    <ul>
+                        <li>
+                            <p>数量统计</p>
+                            <span>3</span>
+                            <span>6</span>
+                            <span>5</span>
+                            <b>个</b>
+                        </li>
+                        <li>
+                            <p>同比上升</p>
+                            <span>1</span>
+                            <span>3</span>
+                            <b>%</b>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="top-bottom">
+                    <div id="chart1" class="allnav"></div>
+                </div>
+
+
+            </div>
+            <div class="cen-bottom">
+                <div class="title">安全巡检</div>
+                <div class="bottom-b">
+                    <div id="chart4" class="allnav"></div>
+                </div>
+
+            </div>
+        </div>
+        <div class="center-right fr">
+            <div class="right-top">
+                <div class="title">在线访客记录</div>
+
+                <div class="echart wenzi">
+                    <div class="gun">
+                        <span>姓名</span>
+                        <span>出入时间</span>
+                        <span>离开时间</span>
+                    </div>
+                    <div id="FontScroll" class="myscroll">
+                        <ul>
+                            <li>
+                                <div class="fontInner clearfix">
+                                    <span>
+                                        <b>1</b>张三
+                                    </span>
+                                    <span>8:00</span>
+                                    <span>13:15</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="fontInner clearfix">
+                                    <span>
+                                        <b>2</b>李四
+                                    </span>
+                                    <span>9:32</span>
+                                    <span>18:00</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="fontInner clearfix">
+                                    <span>
+                                        <b>3</b>王五
+                                    </span>
+                                    <span>8:00</span>
+                                    <span>8:53</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="fontInner clearfix">
+                                    <span>
+                                        <b>4</b>刘六
+                                    </span>
+                                    <span>8:00</span>
+                                    <span>17:00</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="fontInner clearfix">
+                                    <span>
+                                        <b>5</b>胡齐
+                                    </span>
+                                    <span>9:31</span>
+                                    <span>18:20</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="fontInner clearfix">
+                                    <span>
+                                        <b>6</b>小郭
+                                    </span>
+                                    <span>5:00</span>
+                                    <span>17:20</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="fontInner clearfix">
+                                    <span>
+                                        <b>7</b>严八
+                                    </span>
+                                    <span>8:00</span>
+                                    <span>8:36</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="fontInner clearfix">
+                                    <span>
+                                        <b>8</b>张以
+                                    </span>
+                                    <span>8:00</span>
+                                    <span>9:00</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="fontInner clearfix">
+                                    <span>
+                                        <b>9</b>和畅
+                                    </span>
+                                    <span>8:00</span>
+                                    <span>10:45</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="fontInner clearfix">
+                                    <span>
+                                        <b>10</b>王阳
+                                    </span>
+                                    <span>8:00</span>
+                                    <span>8:18</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="fontInner clearfix">
+                                    <span>
+                                        <b>11</b>李艳
+                                    </span>
+                                    <span>8:17</span>
+                                    <span>12:00</span>
+
+                                </div>
+                            </li>
+                            <li>
+                                <div class="fontInner clearfix">
+                                    <span>
+                                        <b>12</b>章文
+                                    </span>
+                                    <span>9:38</span>
+                                    <span>11:53</span>
+
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <div class="right-cen">
+                <div class="title">特种作业类型</div>
+                <div id="chart2" class="allnav">安全事故类型</div>
+            </div>
+            <div class="right-bottom">
+                <div class="title"></div>
+                <div class="chat">
+                    <div id="chart5" class="allnav"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/echarts.min.js"></script>
+<script src="js/wodry.min.js"></script>
+<script src="js/fontscroll.js"></script>
+<script src="js/echarts.js"></script>
+
+<script>
+    /*$('#ceshi').wodry({
+
+        animation: 'rotateX',
+
+        delay: 1000,
+
+        animationDuration: 800
+
+    });*/
+    /*window.onload = function () {
+        setInterval(function () {
+            var hs=document.getElementById("ceshi");
+            var hstyle=hs.style.transform;
+            if(hstyle=='rotateX(-360deg)'){
+                //console.log(1)
+                hs.style.transform='rotateX(0deg)';
+                hs.style.transform='transform 500ms cubic-bezier(0.55, 0.18, 0.92, 0.46) 0s;'
+            }else {
+                hs.style.transform='rotateX(-360deg)';
+                hs.style.transition="all 2s";
+            }
+        }, 5000);
+    };*/
+
+    //顶部时间
+    function getTime(){
+        var myDate = new Date();
+        var myYear = myDate.getFullYear(); //获取完整的年份(4位,1970-????)
+        var myMonth = myDate.getMonth()+1; //获取当前月份(0-11,0代表1月)
+        var myToday = myDate.getDate(); //获取当前日(1-31)
+        var myDay = myDate.getDay(); //获取当前星期X(0-6,0代表星期天)
+        var myHour = myDate.getHours(); //获取当前小时数(0-23)
+        var myMinute = myDate.getMinutes(); //获取当前分钟数(0-59)
+        var mySecond = myDate.getSeconds(); //获取当前秒数(0-59)
+        var week = ['星期日','星期一','星期二','星期三','星期四','星期五','星期六'];
+        var nowTime;
+
+        nowTime = myYear+'-'+fillZero(myMonth)+'-'+fillZero(myToday)+'&nbsp;&nbsp;'+fillZero(myHour)+':'+fillZero(myMinute)+':'+fillZero(mySecond)+'&nbsp;&nbsp;'+week[myDay]+'&nbsp;&nbsp;';
+        //console.log(nowTime);
+        $('#time').html(nowTime);
+    };
+    function fillZero(str){
+        var realNum;
+        if(str<10){
+            realNum	= '0'+str;
+        }else{
+            realNum	= str;
+        }
+        return realNum;
+    }
+    setInterval(getTime,1000);
+
+</script>
+
+
+<script>
+    var chart1 = echarts.init(document.getElementById('basicGauge1'));
+    var chart2 = echarts.init(document.getElementById('basicGauge2'));
+    var chart3 = echarts.init(document.getElementById('basicGauge3'));
+
+    var gaugeOption = function(title, value, unit) {
+        return {
+            title: {
+                text: title,
+                left: 'center',
+                top: '10%',
+                textStyle: { color: '#fff', fontSize: 14 }
+            },
+            series: [{
+                type: 'gauge',
+                radius: '90%',
+                center: ['50%', '60%'],
+                detail: {
+                    valueAnimation: true,
+                    formatter: value + unit,
+                    fontSize: 18,
+                    color: '#fff'
+                },
+                axisLine: {
+                    lineStyle: {
+                        width: 10,
+                        color: [[0.3, '#67e0e3'], [0.7, '#37a2da'], [1, '#fd666d']]
+                    }
+                },
+                data: [{ value: value }]
+            }]
+        }
+    };
+
+    chart1.setOption(gaugeOption('安全巡检', 4, '次'));
+    chart2.setOption(gaugeOption('整改率', 89, '%'));
+    chart3.setOption(gaugeOption('作业许可证', 534, '张'));
+</script>
+
+<script src="js/echarts.min.js"></script>
+<script>
+    var lineChart = echarts.init(document.getElementById('hazardLineChart'));
+    var barChart = echarts.init(document.getElementById('hazardBarChart'));
+
+    var categories = ['火灾隐患', '高处作业', '电气安全', '机械伤害', '化学品泄漏'];
+    var months = ['1月', '2月', '3月', '4月', '5月'];
+    var dataLine = [
+        [5, 6, 7, 8, 6],
+        [3, 4, 6, 5, 4],
+        [4, 5, 6, 7, 5],
+        [2, 3, 4, 3, 2],
+        [1, 2, 2, 3, 2]
+    ];
+
+    var seriesLine = categories.map(function (cat, i) {
+        return {
+            name: cat,
+            type: 'line',
+            data: dataLine[i]
+        };
+    });
+
+    lineChart.setOption({
+        title: { text: '隐患趋势折线图', left: 'center', textStyle: { color: '#fff' } },
+        tooltip: { trigger: 'axis' },
+        legend: { data: categories, top: 25, textStyle: { color: '#fff' } },
+        xAxis: { type: 'category', data: months, axisLabel: { color: '#fff' } },
+        yAxis: { type: 'value', axisLabel: { color: '#fff' } },
+        series: seriesLine
+    });
+
+    barChart.setOption({
+        title: { text: '隐患类型柱状图', left: 'center', textStyle: { color: '#fff' } },
+        tooltip: { trigger: 'axis' },
+        xAxis: { type: 'category', data: categories, axisLabel: { color: '#fff' } },
+        yAxis: { type: 'value', axisLabel: { color: '#fff' } },
+        series: [{
+            data: [28, 22, 27, 14, 10],
+            type: 'bar'
+        }]
+    });
+</script>
+
+<script src="js/echarts.min.js"></script>
+<script>
+    var chart = echarts.init(document.getElementById('hazardLineChart'));
+
+    var categories = ['火灾隐患', '高处作业', '电气安全', '机械伤害', '化学品泄漏'];
+
+    var rectifying = [12, 9, 11, 7, 5];
+    var completed = [10, 8, 10, 6, 4];
+    var overdue = [6, 5, 6, 3, 2];
+
+    chart.setOption({
+        title: {
+            text: '',
+            left: 'center',
+            textStyle: { color: '#fff' }
+        },
+        tooltip: { trigger: 'axis' },
+        legend: {
+            data: ['整改中', '已完成', '已逾期'],
+            top: 30,
+            textStyle: { color: '#fff' }
+        },
+        xAxis: {
+            type: 'category',
+            data: categories,
+            axisLabel: { color: '#fff' }
+        },
+        yAxis: {
+            type: 'value',
+            axisLabel: { color: '#fff' }
+        },
+        series: [
+            {
+                name: '整改中',
+                type: 'bar',
+                data: rectifying,
+                stack: '总量'
+            },
+            {
+                name: '已完成',
+                type: 'bar',
+                data: completed,
+                stack: '总量'
+            },
+            {
+                name: '已逾期',
+                type: 'line',
+                data: overdue
+            }
+        ]
+    });
+</script>
+
+<script src="js/echarts.min.js"></script>
+<script>
+    var chart = echarts.init(document.getElementById('hazardLineChart'));
+
+    var categories = ['火灾隐患', '高处作业', '电气安全', '机械伤害', '化学品泄漏'];
+
+    var rectifying = [12, 9, 11, 7, 5];
+    var completed = [10, 8, 10, 6, 4];
+    var overdue = [6, 5, 6, 3, 2];
+
+    chart.setOption({
+        title: {
+            text: '',
+            left: 'center',
+            textStyle: { color: '#fff' }
+        },
+        tooltip: { trigger: 'axis' },
+        legend: {
+            data: ['整改中', '已完成', '已逾期'],
+            top: 30,
+            textStyle: { color: '#fff' }
+        },
+        xAxis: {
+            type: 'category',
+            data: categories,
+            axisLabel: { color: '#fff' }
+        },
+        yAxis: {
+            type: 'value',
+            axisLabel: { color: '#fff' }
+        },
+        series: [
+            {
+                name: '整改中',
+                type: 'bar',
+                data: rectifying,
+                barGap: 0
+            },
+            {
+                name: '已完成',
+                type: 'bar',
+                data: completed
+            },
+            {
+                name: '已逾期',
+                type: 'line',
+                data: overdue
+            }
+        ]
+    });
+</script>
+</body>
+</html>
+
+
